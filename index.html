@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>House of Talentt</title>
+
+    <link rel="stylesheet" href="tutee-starter/assets/css/stylesheet.css">
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  </head>
+
+
+  <body id="home">
+      <section class=" w3l-header-4">
+          <header id="site-header">
+              <div class="container">
+                  <nav class="navbar navbar-expand-lg navbar-dark stroke">
+                      <h1>
+                          <img src="tutee-starter/assets/hotlogo.png" height="70" width="70" />
+                      </h1>
+                      <h1>
+                          <a class="navbar-brand" href="index.html">
+                              House of Talentt
+                          </a>
+                      </h1>
+
+
+                      
+                  </nav>
+              </div>
+          </header>
+      </section>
+      <script src="assets/js/jquery-3.3.1.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script>
+          $(window).on("scroll", function () {
+              var scroll = $(window).scrollTop();
+
+              if (scroll >= 80) {
+                  $("#site-header").addClass("nav-fixed");
+              } else {
+                  $("#site-header").removeClass("nav-fixed");
+              }
+          });
+
+          $(".navbar-toggler").on("click", function () {
+              $("header").toggleClass("active");
+          });
+          $(document).on("ready", function () {
+              if ($(window).width() > 991) {
+                  $("header").removeClass("active");
+              }
+              $(window).on("resize", function () {
+                  if ($(window).width() > 991) {
+                      $("header").removeClass("active");
+                  }
+              });
+          });
+      </script>
+
+      <script>
+          $(function () {
+              $('.navbar-toggler').click(function () {
+                  $('body').toggleClass('noscroll');
+              })
+          });
+      </script>
+
+    
+    </script>
+
+      <script>
+          const bodyElement = document.querySelector('body');
+          const themeToggle = document.querySelector('#themeToggle');
+
+          // Apply dark theme by default
+          bodyElement.classList.add('dark');
+          themeToggle.checked = true;
+          localStorage.setItem('theme', 'dark');
+
+          // Add event listener for theme switcher
+          themeToggle.addEventListener('change', function (e) {
+              if (e.target.checked) {
+                  bodyElement.classList.add('dark');
+                  localStorage.setItem('theme', 'dark');
+              } else {
+                  bodyElement.classList.remove('dark');
+                  localStorage.setItem('theme', '');
+              }
+          });
+      </script>
+
+
+      <section class="w3l-hero-headers-9" id="home">
+          <div class="slide header11" data-selector="header11">
+              <div class="container">
+                  <div class="banner-text ">
+                      <h5 class="" style="text-transform:none">Embrace the Talent<br> with in you!</h5>
+                      <p style="font-family:'Times New Roman', Times, serif">
+                      </p>
+
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="w3l-call-to-action_9">
+          <div class="call-w3">
+              <div class="container">
+                  <div class="booking-form-content">
+                      <div class="main-titles-head ">
+                          <h3 class="header-name" style="text-decoration: underline;">
+                              Highlights
+                          </h3>
+                      </div>
+                      <div class="row text-center">
+                          <div class="col-lg-4 col-md-6 propClone about-line-top ">
+                              <div class="area-box color-white editContent box-active">
+                                  <div class="icon-back"><span class="fa fa-video-camera"></span></div>
+
+                                  <h5>
+                                      <a href="blog.html" class="editContent">
+                                          High-Quality Video Production
+                                      </a>
+                                  </h5>
+                                  <p class="para editContent">
+                                      Produce professional-grade videos with our high-quality production tools.
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 propClone about-line-top ">
+                              <div class="area-box color-white editContent">
+                                  <div class="icon-back"><span class="fa fa-users"></span></div>
+
+                                  <h5>
+                                      <a href="blog.html" class="editContent">
+                                          Seamless Social Integration
+                                      </a>
+                                  </h5>
+                                  <p class="para editContent">
+                                      Share your moments effortlessly across all your favorite social networks with our seamless integration.
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 propClone about-line-top">
+                              <div class="area-box color-white editContent box-active">
+                                  <div class="icon-back"><span class="fa fa-money"></span></div>
+
+                                  <h5>
+                                      <a href="blog.html" class="editContent">
+                                          Monetization Opportunities
+                                      </a>
+                                  </h5>
+                                  <p class="para editContent">
+                                      Offer creators unique monetization options, such as brand partnerships, encouraging high-quality content creation.
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 propClone about-line-top ">
+                              <div class="area-box color-white editContent">
+                                  <div class="icon-back"><span class="fa fa-trophy"></span></div>
+
+                                  <h5>
+                                      <a href="blog.html" class="editContent">
+                                          In-App Competitions
+                                      </a>
+                                  </h5>
+                                  <p class="para editContent">
+                                      Regularly introduce trending competitions or themes that encourage user participation and viral content creation.
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 propClone about-line-top ">
+                              <div class="area-box color-white editContent box-active">
+                                  <div class="icon-back"><span class="fa fa-lock"></span></div>
+
+                                  <h5>
+                                      <a href="blog.html" class="editContent">
+                                          Privacy and Security
+                                      </a>
+                                  </h5>
+                                  <p class="para editContent">
+                                      Emphasize user privacy and security, offering robust settings for content visibility, interactions, and data protection, appealing to privacy-conscious users.
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 propClone about-line-top ">
+                              <div class="area-box color-white editContent">
+                                  <div class="icon-back"><span class="fa fa-check"></span></div>
+
+                                  <h5>
+                                      <a href="blog.html" class="editContent">
+                                          Exclusive Content Tiers
+                                      </a>
+                                  </h5>
+                                  <p class="para editContent">
+                                      Offer premium content tiers where top creators can release exclusive videos, tutorials, or behind-the-scenes footage for their followers, driving engagement and monetization.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="w3l-content-with-photo-4" id="about">
+          <div class="content-with-photo4-block editContent">
+              <div class="container">
+                  <div class="row d-flex align-items-center justify-content-center">
+                      <div class="col-lg-7 text-center">
+                          <div class="foot-best" style="display: flex; justify-content: center; align-items: center; height: 100px; width: auto;">
+                              <img src="tutee-starter/assets/hotlogo.png" alt="product" class="img-responsive about-me">
+                          </div>
+                      </div>
+                      <div class="my-bio col-lg-5 text-center">
+                          <h3>About Us</h3>
+                          <p class="para mb-3">
+                              House of Talentt is proudly powered by VCS Organisation, a proprietorship firm registered in accordance with the laws of India. VCS Organisation is dedicated to fostering innovation and creativity, and House of Talentt is a testament to our commitment to providing dynamic platforms that empower individuals.
+
+                          </p>
+
+                          <p class="para mb-3">
+                              At House of Talentt, we are passionate about creating a vibrant video-sharing platform where creativity and opportunity meet. Our mission is to offer a space where individuals can showcase their unique talents and passions through engaging video content.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="w3l-covers-18">
+          <div class="covers-main editContent">
+              <div class="container">
+                  <div class="main-titles-head ">
+                      <h3 class="header-name">
+                          Steps to Make Money
+                      </h3>
+                  </div>
+                  <div class="gallery-image row">
+                      <div class="col-lg-4 col-md-6">
+                          <img src="tutee-starter/assets/1.png" alt="product" class="img-responsive ">
+                          <div class="img-box">
+                              <h5 class="mb-2" style="text-align:center"><a href="about.html">Register</a></h5>
+                              <p class="para" style="text-align:center">Create Your Account on House of Talentt with basic details.</p>
+                          </div>
+                      </div>
+                      <div class=" col-lg-4 col-md-6 top-top2">
+                          <img src="tutee-starter/assets/2.png" alt="product" class="img-responsive ">
+                          <div class="img-box">
+                              <h5 class="mb-2" style="text-align:center"><a href="about.html">Recharge</a></h5>
+                              <p class="para" style="text-align:center">Recharge your wallet with HOT <br />Coins.</p>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 top-top">
+                          <img src="tutee-starter/assets/3.png" alt="product" class="img-responsive ">
+                          <div class="img-box">
+                              <h5 class="mb-2" style="text-align:center"><a href="about.html">Participate and Win</a></h5>
+                              <p class="para" style="text-align:center">Choose Competition with a wide range of winning amount.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+      </section>
+
+      <section class="w3l-team-main-6" id="team">
+          <div class="team-content-page editContent">
+              <div class="main-titles-head">
+                  <h3 class="header-name">
+                      Meet Our Team
+                  </h3>
+              </div>
+              <div class="container text-center">
+                  <div class="row justify-content-center">
+
+                      <div class="col-lg-3 col-md-6 col-sm-6 team-team">
+                          <div class="our-team">
+                              <div class="picture">
+                                  <img src="../img3.jpeg" alt="product" class="img-responsive about-me">
+                              </div>
+                              <div class="team-content">
+                                  <h3 class="name">Saurabh</h3>
+                                  <h4 class="title">Founder and CEO</h4>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6 col-sm-6 team-team">
+                          <div class="our-team">
+                              <div class="picture">
+                                  <img src="../img2.jpeg" alt="product" class="img-responsive about-me">
+                              </div>
+                              <div class="team-content">
+                                  <h3 class="name">Chetan</h3>
+                                  <h4 class="title">Co-Founder</h4>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="col-lg-3 col-md-6 col-sm-6 team-team">
+                          <div class="our-team">
+                              <div class="picture">
+                                  <img src="img.jpg" alt="product" class="img-responsive about-me">
+                              </div>
+                              <div class="team-content">
+                                  <h3 class="name">Avinash</h3>
+                                  <h4 class="title">COO</h4>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6 col-sm-6 team-team">
+                          <div class="our-team">
+                              <div class="picture">
+                                  <img src="../img1.jpeg" alt="product" class="img-responsive about-me">
+                              </div>
+                              <div class="team-content">
+                                  <h3 class="name">Shroti</h3>
+                                  <h4 class="title">Vice President</h4>
+                              </div>
+                          </div>
+                      </div>
+
+
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="w3l-footer-29-main">
+          <div class="footer-29 py-5">
+              <div class="container">
+                  <div class="grid-col-4 footer-top-29">
+                      <div class="footer-list-29 footer-1">
+                          <h2 class="footer-title-29">About Us</h2>
+                          <p class="para">House of Talentt is proudly powered by VCS Organisation, a proprietorship firm registered in accordance with the laws of India. VCS Organisation is dedicated to fostering innovation and creativity, and House of Talentt is a testament to our commitment to providing dynamic platforms that empower individuals.</p>
+                          <div class="main-social-footer-29">
+                              <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+                              <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+                              <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+                              <a href="#google-plus" class="google-plus"><span class="fa fa-google-plus"></span></a>
+                              <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+                          </div>
+                      </div>
+                      <div class="footer-list-29 footer-3">
+                          <div class="properties">
+                              <h6 class="footer-title-29">Contact Us</h6>
+                              <ul>
+                                  <li>
+                                      <p>
+                                          <span class="fa fa-map-marker"></span>
+                                          House No.347 Sector 7
+                                          Jind Haryana (126102)
+                                      </p>
+                                  </li>
+                                  <li><a href="mailto:estate-mail@support.com" class="mail"><span class="fa fa-envelope-open-o"></span> info@houseoftalentt.com</a></li>
+                              </ul>
+                          </div>
+                      </div>
+
+                      <div class="footer-list-29 footer-3">
+                          <div class="properties">
+                              <h6 class="footer-title-29">Links</h6>
+                              <ul>
+                                  <li>
+                                      <a href="Refund.html">
+                                          Refund Policy
+                                      </a>
+                                      <br />
+                                      <br />
+                                      <a href="Community.html">
+                                          Commnity Guidlines
+                                      </a>
+                                      <br />
+                                      <br />
+                                      <a href="Copyright.html">
+                                          Copyright and GRM
+                                      </a>
+                                      <br />
+                                      <br />
+                                      <a href="Content.html">
+                                          Content Policy
+                                      </a>
+                                      <br />
+                                      <br />
+                                      <a href="Responsible.html">
+                                          Responsible Disclosure
+                                      </a>
+                                      <br />
+                                      <br />
+                                      <a href="Rules.html">
+                                          Contest Rules and Guidlines
+                                      </a>
+                                      <a href="Refund.html">
+                                          Refund Policy
+                                      </a>
+                                      <br />
+                                      <br />
+                                      <a href="About.html">
+                                          About Us
+                                      </a>
+                                      <br />
+                                      <br />
+                                      <a href="EULA.html">
+                                          User Agreement
+                                      </a>
+                                      <br />
+                                      <br />
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+
+
+                      <div class="footer-list-29 footer-buttons">
+                          <a href="https://play.google.com/store/apps" class="btn btn-google-play">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="Get it on Google Play">
+                          </a>
+                          <a href="https://apps.apple.com/us/genre/ios/id36" class="btn btn-app-store">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png" alt="Download on the App Store">
+                          </a>
+                          <a href="https://apps.apple.com/us/genre/ios/id36" class="btn btn-app-store">
+                              <img src="https://raw.githubusercontent.com/Thukor/MazeSolver/master/resources/download.png" alt="Download on the App Store">
+                          </a>
+
+                      </div>
+
+
+                  </div>
+                  <div class="bottom-copies row">
+                      <p class="copy-footer-29 col-lg-8">© 2024 House of Talentt. All rights reserved | Designed by <a href="https://techcanopus.com/main/index.php">TechCanOpus.</a></p>
+                      <ul class="list-btm-29 col-lg-4">
+                          <li><a href="Privacy.html">Privacy policy</a></li>
+                          <li><a href="Terms.html">Terms of service</a></li>
+                      </ul>
+
+                  </div>
+              </div>
+          </div>
+      </section>
+
+
+      <button onclick="topFunction()" id="movetop" title="Go to top">
+          <span class="fa fa-level-up"></span>
+      </button>
+      <script>
+          window.onscroll = function () {
+              scrollFunction()
+          };
+
+          function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  document.getElementById("movetop").style.display = "block";
+              } else {
+                  document.getElementById("movetop").style.display = "none";
+              }
+          }
+
+          function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+          }
+      </script>
+
+  </body>
+
+</html>
